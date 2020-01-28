@@ -116,11 +116,11 @@ width:  88%;
   margin-top: 70px;
 
 }
-.contenu__nom
+.contenu__titre--color
 {
   color: #f1c40f ;
 }
-.underline
+.contenu__titre--underline
 {
   border-bottom:  2px  #f1c40f  solid;
  
