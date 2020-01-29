@@ -24,7 +24,7 @@
   margin: auto ;
 
 }
- @media all and (max-width: 1024px)
+ @media all and (max-width: 900px)
  {
    
   
@@ -36,13 +36,7 @@
         align-items: center;
         width: auto;
       } 
-      .liseret
-      {
-       background-color: thistle;
-       
-        
-    
-      } 
+      
 
       .contenu__titre
       {
@@ -50,6 +44,24 @@
         padding-left: 30%;
 
       }  
+
+      .liseret 
+      {
+       
+        margin-left: 30px !important;
+        background-color: #f1c40f !important;
+        width: auto !important;
+      }
+      .liseret__photo
+      {
+        display: none !important;
+      }
+
+      .recommandations__contenu__1 {
+        margin-right: 100px !important;
+    }
+      
+      
   
   
       
@@ -128,7 +140,7 @@
 .contenu
 
 {
-width:  88%;
+width:  75%;
 
 }
 
