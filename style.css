@@ -27,6 +27,14 @@
  @media all and (max-width: 900px)
  {
    
+  .photo_profile_rd
+  {
+    margin-top: 20px !important;
+    display: block !important;
+    margin-left: 35% !important;
+    border: 4px  #f1c40f   solid !important;
+    
+  }
   
 
       .bloc_page
@@ -35,23 +43,36 @@
         flex-direction: column-reverse; 
         align-items: center;
         width: auto;
+      
+        
       } 
       
 
       .contenu__titre
       {
 
-        padding-left: 30%;
+        padding-left: 20%;
+     
 
       }  
+      .contenu
+      {
+        width: auto !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        padding-bottom: 20px !important;
+      }
 
       .liseret 
       {
        
-        margin-left: 30px !important;
+        
         background-color: #f1c40f !important;
         width: auto !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
       }
+     
       .liseret__photo
       {
         display: none !important;
@@ -60,6 +81,8 @@
       .recommandations__contenu__1 {
         margin-right: 100px !important;
     }
+
+    
       
       
   
@@ -68,7 +91,11 @@
 
  }
 
-
+/********************************body ********************************************************************/
+.photo_profile_rd
+{
+  display: none;
+}
 
 
 
