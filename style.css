@@ -19,7 +19,7 @@
     box-shadow: 0px 4px 5px #cccccc;
 }
 
-.liseret {
+.edge {
     display: flex;
     flex-direction: column;
     background-color: #f1c40f;
@@ -29,14 +29,14 @@
 
 /********************************body ********************************************************************/
 
-.photo_profile_rd {
+.profile_picture_rd {
     display: none;
 }
 
 
-/****************************************** LISERET *****************************************************/
+/****************************************** edge *****************************************************/
 
-.liseret__photo {
+.edge__photo {
     border-radius: 100%;
     display: block;
     justify-content: center;
@@ -47,63 +47,63 @@
     ;
 }
 
-.liseret__titre {
+.edge__title {
     text-align: center;
     background-color: #4d5656;
     font-size: 1.1em;
     color: #e6d00e;
 }
 
-.liseret p {
+.edge p {
     margin-left: 20px;
     margin-right: 20px;
     font-size: 0.9em;
     text-align: justify;
 }
 
-.liseret__contact {
+.edge__contact {
     height: 20%;
 }
 
-.liseret__contact__info {
+.edge__contact__info {
     margin-left: 5px;
 }
 
-.liseret__propos {
+.edge__aboutMe {
     height: 60%;
 }
 
-.liseret_icons {
+.edge_icons {
     display: flex;
     justify-content: space-around;
     padding-bottom: 20px;
 }
 
-.liseret_icons i {
+.edge_icons i {
     color: #4d5656;
 }
 
-.liseret__propos p {
+.edge__aboutMe p {
     margin-top: 25px;
 }
 
 
-/******************************************* CONTENU ***************************************************/
+/******************************************* content ***************************************************/
 
-.contenu {
+.content {
     width: 500px;
     padding: 25px;
 }
 
-.contenu__titre {
+.content__title {
     margin-top: 70px;
 }
 
-.contenu__titre--color {
+.content__title--color {
     color: #f1c40f;
 }
 
-.contenu__titre--underline {
+.content__title--underline {
     border-bottom: 2px #f1c40f solid;
 }
 
@@ -117,74 +117,74 @@ i {
     color: #f1c40f;
 }
 
-.formation__titre {
+.training__title {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     border-bottom: 3px #f1c40f solid;
 }
 
-.formation__titre h2 {
+.training__title h2 {
     margin-left: 20px;
     margin-top: 95px;
 }
 
-.exprience__titre {
+.experience__title {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     border-bottom: 3px #f1c40f solid;
 }
 
-.exprience__titre h2 {
+.experience__title h2 {
     margin-left: 20px;
     margin-top: 95px;
 }
 
-.recommandations__titre {
+.recommendation__title {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     border-bottom: 3px #f1c40f solid;
 }
 
-.recommandations__titre h2 {
+.recommendation__title h2 {
     margin-left: 20px;
     margin-top: 95px;
 }
 
-.recommandations__contenu {
+.recommendation__content {
     display: flex;
     flex-direction: row;
 }
 
-.recommandations__contenu__1 {
+.recommendation__content__1 {
     margin-right: 200px;
 }
 
-.experience__contenue,
-.formation__contenu {
+.experience__content,
+.training__content {
     display: flex;
     flex-direction: row;
 }
 
-.section__gauche__contenu {
+.left__section__content {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     width: 200px;
 }
 
-.section__gauche__contenu p {
+.left__section__content p {
     margin-left: 20px;
     margin-bottom: 190px;
 }
 
-.section__droite__contenu {
+.right__section__content {
     margin-left: 20px;
 }
 
-.section__droite__contenu p {
+.right__section__content p {
     text-align: justify;
 }
 
@@ -192,7 +192,7 @@ i {
 /***************MEDIA QUERRIES**********************/
 
 @media all and (max-width: 900px) {
-    .photo_profile_rd {
+    .profile_picture_rd {
         /* margin-top: 20px; */
         margin: 30px auto 0px auto;
         display: block;
@@ -206,7 +206,7 @@ i {
         align-items: center;
         width: auto;
     }
-    .contenu__titre {
+    .content__title {
         margin-top: 0px;
         padding-top: 0px;
         padding-left: 20%;
@@ -214,30 +214,30 @@ i {
     h1 {
         margin-top: 0px;
     }
-    .contenu {
+    .content {
         width: auto;
         padding: 25px;
     }
-    .liseret {
+    .edge {
         background-color: #f1c40f;
         width: auto;
         padding-left: 10px;
         padding-right: 10px;
     }
-    .liseret__photo {
+    .edge__photo {
         display: none;
     }
-    .recommandations__contenu__1 {
+    .recommendation__content__1 {
         margin-right: 100px;
     }
-    .liseret__contact__info {
+    .edge__contact__info {
         display: flex;
         flex-direction: row;
     }
-    .liseret__contact__info div {
+    .edge__contact__info div {
         margin-right: 150px;
     }
-    .section__gauche__contenu p {
+    .left__section__content p {
         margin-bottom: 150px;
     }
 }
