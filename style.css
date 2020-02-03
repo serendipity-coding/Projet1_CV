@@ -28,6 +28,9 @@
 .profile_picture_rd {
     display: none;
 }
+.aboutMe__rd {
+    display: none;
+}
 
 
 /****************************************** edge *****************************************************/
@@ -195,6 +198,15 @@ i {
          margin-left: 35%; 
         border: 4px #f1c40f solid;
         border-radius: 100%;
+    }
+    .aboutMe__rd
+    {
+        display: flex;
+        justify-content: center;
+        border: 3px #f1c40f solid;
+        background-color: #f5e557;
+        padding-left: 15px;
+        border-radius: 10px;
     }
     .bloc_page {
         display: flex;
