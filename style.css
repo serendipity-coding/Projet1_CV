@@ -82,7 +82,11 @@
 .edge_icons i {
   color: #171818;
 }
-.edge_icons-linkedin {
+.edge_icons-linkedin
+{
+    margin-left: 80px;
+}
+.edge_icons-linkedin i{
     color: #171818;
 }
 
@@ -129,6 +133,7 @@ i {
   flex-direction: row;
   align-items: baseline;
   border-bottom: 3px #16a084e8 solid;
+  
 }
 .experience__title h2 {
   margin-left: 20px;
@@ -142,7 +147,7 @@ i {
 }
 .recommendation__title h2 {
   margin-left: 20px;
-  margin-top: 95px;
+  margin-top: 50px;
 }
 .recommendation__content {
   display: flex;
@@ -164,13 +169,19 @@ i {
 }
 .left__section__content p {
   margin-left: 20px;
-  margin-bottom: 190px;
+  margin-bottom: 110px;
 }
 .right__section__content {
   margin-left: 20px;
 }
 .right__section__content p {
   text-align: justify;
+  margin-bottom: 40px;
+}
+.training__content .left__section__content
+{
+    margin-bottom: 110px;
+    
 }
 /*********************************************r RESPONSIVE DESIGN *******************************************************/
 @media all and (max-width: 900px) {
@@ -216,9 +227,11 @@ i {
   .edge__photo {
     display: none;
   }
-  .edge_icons-linkedin {
-      display: none;
-  }
+  .edge_icons-linkedin i{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+ 
   .recommendation__content__1 {
     margin-right: 100px;
   }
@@ -227,10 +240,16 @@ i {
     flex-direction: row;
   }
   .edge__contact__info div {
-    margin-right: 150px;
+    margin-right: 100px;
+  }
+  .training__content .left__section__content  {
+    margin-bottom: 90px;  
   }
   .left__section__content p {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
+  }
+  .right__section__content p{
+    margin-bottom: 50px;  
   }
   .edge__aboutMe {
     display: none;
