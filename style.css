@@ -303,6 +303,10 @@ i {
       .edge_icons-linkedin {
           margin-left: auto;
       }
+      .content
+      {
+          width: auto;
+      }
 
 
 }
