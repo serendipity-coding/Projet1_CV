@@ -97,7 +97,7 @@ a{
     color: aquamarine;
 }
 /******************************************* content ***************************************************/
-.content {
+.page__content {
   width: 500px;
   padding: 25px;
 }
@@ -136,7 +136,7 @@ i {
 }
 .experience__title h2 {
   margin-left: 20px;
-  margin-top: 95px;
+  
 }
 .recommendation__title {
   display: flex;
@@ -146,42 +146,40 @@ i {
 }
 .recommendation__title h2 {
   margin-left: 20px;
-  margin-top: 50px;
+ 
 }
-.recommendation__content {
+
+.content {
+
+  display: flex;
+  flex-flow: row wrap; 
+  margin-bottom: 10px;
+  margin-top:10px;
+}
+.content__date{
   display: flex;
   flex-direction: row;
+  margin-right: 20px;
+  width: 30%;
 }
-.recommendation__content__1 {
-  margin-right: 200px;
+.content__text{
+  width:65%
 }
-.experience__content,
-.training__content {
-  display: flex;
-  flex-direction: row;
+.content p{
+  margin-top: 0px;
+  margin-left: 10px;
 }
-.left__section__content {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  width: 200px;
+h3{
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
-.left__section__content p {
-  margin-left: 20px;
-  margin-bottom: 110px;
-}
-.right__section__content {
-  margin-left: 20px;
-}
-.right__section__content p {
-  text-align: justify;
-  margin-bottom: 40px;
-}
-.training__content .left__section__content
-{
-    margin-bottom: 110px;
-    
-}
+
+
+
+
+
+
+
 /*********************************************r RESPONSIVE DESIGN *******************************************************/
 /******************Tablettes*****************************/
 @media all and (max-width: 991px) {
@@ -199,6 +197,7 @@ i {
     background-color: #16a084e8 ;
     padding-left: 10px;
     border-radius: 10px;
+    margin-top: 20px;
   }
   .bloc_page {
     display: flex;
