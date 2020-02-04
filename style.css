@@ -184,7 +184,8 @@ i {
     
 }
 /*********************************************r RESPONSIVE DESIGN *******************************************************/
-@media all and (max-width: 900px) {
+/******************Tablettes*****************************/
+@media all and (max-width: 991px) {
   .profile_picture_rd {
     margin-top: 25px;
     display: block;
@@ -254,4 +255,54 @@ i {
   .edge__aboutMe {
     display: none;
   }
+}
+
+/***********************************Telephone *************************/
+@media screen and (max-width: 425px)
+{
+    .profile_picture_rd{
+        margin-left: 25%;
+    }
+    
+    .recommendation__content__1 {
+        margin-right: auto;
+      }
+      .left__section
+      {
+          width: 30%;
+      }
+      .right__section
+      {
+          width: 70%
+      }
+      .left__section__content p {
+        margin-bottom: 105px;
+        width: auto;
+      }
+
+      .right__section__content p {
+        margin-bottom: auto;
+      }
+     
+      .edge
+      {
+          width: auto;
+      }
+      .edge p{
+          width: auto;
+          margin-right: auto;
+      }
+
+      .edge_icons {
+          display: flex;
+          justify-content: centers;
+      }
+      .edge__contact__info div {
+        margin-right: auto
+      }
+      .edge_icons-linkedin {
+          margin-left: auto;
+      }
+
+
 }
