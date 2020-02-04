@@ -133,7 +133,6 @@ i {
   flex-direction: row;
   align-items: baseline;
   border-bottom: 3px #16a084e8 solid;
-  
 }
 .experience__title h2 {
   margin-left: 20px;
@@ -306,12 +305,12 @@ i {
       .content
       {
           width: auto;
+          padding: auto;
+          margin: auto;
       }
-
-.bloc_page {
-    width: auto;
-    margin: auto;
-    
-
-
+      .bloc_page {
+          width: auto;
+          margin: auto;
+          box-shadow: 0px 4px 5px #c43737;
+      }
 }
