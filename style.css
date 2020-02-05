@@ -1,4 +1,14 @@
-/************************** FONTS ******************************/
+/*SOMMAIRE
+-------------------------------------------------------
+1. FONTS
+2. MISE EN PAGE GÉNÉRALE 
+3. PARTIE GAUCHE (EDGE)
+4. PARTIE DROITE (PAGE_CONTENT)
+5. RESPONSIVE DESIGN
+*/
+
+/*1.FONTS 
+*******************************************************************/
 
 @font-face {
   font-family: "aileronregular";
@@ -13,7 +23,8 @@
   font-style: normal;
 }
 
-/**********************************************BODY************************************************************/
+/*MISE EN PAGE GÉNÉRALE 
+*******************************************************************/
 .bloc_page {
   display: flex;
   flex-direction: row;
@@ -21,23 +32,21 @@
   margin: 40px auto;
   box-shadow: 0px 4px 5px #cccccc;
 }
-
-.edge {
-  display: flex;
-  flex-direction: column;
-  background-color: #16a085;
-  width: 300px;
-}
-
 .profile_picture_rd {
   display: none;
 }
 .aboutMe__rd {
   display: none;
 }
-/****************************************** edge *****************************************************/
+
+/* edge 
+******************************************************************/
 .edge {
+  display: flex;
+  flex-direction: column;
+  background-color: #16a085;
   border-radius: 5px;
+  width: 300px;
 }
 .edge__photo {
   border-radius: 100%;
@@ -84,19 +93,21 @@
 }
 .edge_icons-linkedin
 {
-    margin-left: 80px;
+  margin-left: 80px;
 }
 .edge_icons-linkedin i{
-    color: #171818;
+  color: #171818;
 }
 
 .edge__aboutMe p {
   margin-top: 25px;
 }
 a{
-    color: aquamarine;
+  color: aquamarine;
 }
-/******************************************* content ***************************************************/
+
+/*PAGE_CONTENT
+*****************************************************************/
 .page__content {
   width: 500px;
   padding: 25px;
@@ -126,10 +137,8 @@ i {
   border-bottom: 3px #16a084e8 solid;
 }
 .title h2 {
-  margin-left: 20px;
-  
+  margin-left: 20px;  
 }
-
 .content {
   display: flex;
   flex-flow: row wrap; 
@@ -154,8 +163,10 @@ h3{
   margin-top: 0px;
   margin-bottom: 5px;
 }
-/*********************************************r RESPONSIVE DESIGN *******************************************************/
-/******************Tablettes*****************************/
+
+/** RESPONSIVE DESIGN 
+*******************************************************/
+/*Tablettes*/
 @media all and (max-width: 991px) {
   .profile_picture_rd {
     margin-top: 25px;
@@ -204,8 +215,7 @@ h3{
   .edge_icons-linkedin i{
     margin-left: 30px;
     margin-top: 20px;
-}
- 
+  }
   .edge__contact__info {
     display: flex;
     flex-direction: row;
@@ -229,39 +239,43 @@ h3{
   }
 }
 
-/***********************************Telephone *************************/
+/*Telephone*/
 @media screen and (max-width: 425px)
 {
-    .profile_picture_rd{
-        margin-left: 25%;
-    }  
-      .edge
-      {
-          width: auto;
-      }
-      .edge p{
-          width: auto;
-          margin-right: auto;
-      }
-
-      .edge_icons {
-          display: flex;
-          justify-content: centers;
-      }
-      .edge__contact__info div {
-        margin-right: auto
-      }
-      .edge_icons-linkedin {
-          margin-left: auto;
-      }
-      .content
-      {
-          width: auto;
-          padding: 10px 10px 10px 10px;        
-      }
-      .bloc_page {
-          width: auto;
-          margin: auto;
-          box-shadow: 0px 4px 5px #eeebeb;
-      }
+  .profile_picture_rd{
+    margin-left: 25%;
+  }  
+  .edge{
+     width: auto;
+  }
+  .edge p{
+    width: auto;
+    margin-right: auto;
+  }
+  .edge_icons {
+    display: flex;
+    justify-content: center;
+  }
+  .edge__contact__info div {
+    margin-right: auto
+  }
+  .edge_icons-linkedin {
+    margin-left: auto;
+  }
+  .content{
+    width: auto;
+    padding: 10px 10px 10px 10px;            
+  }
+  .content__text{
+    width: auto;
+    justify-content: center;
+  }
+  .content__date{
+    width: auto;
+  }
+  .bloc_page {
+    width: auto;
+    margin: auto;
+    box-shadow: 0px 4px 5px #eeebeb;
+  }
 }
