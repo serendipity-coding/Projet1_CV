@@ -103,6 +103,7 @@ a{
 }
 .content__title {
   margin-top: 70px;
+  margin-bottom: 70px;;
 }
 .content__title--color {
   color: #16a084e8;
@@ -118,39 +119,18 @@ h1 {
 i {
   color: #16a084e8;
 }
-.training__title {
+.title {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   border-bottom: 3px #16a084e8 solid;
 }
-.training__title h2 {
-  margin-left: 20px;
-  margin-top: 95px;
-}
-.experience__title {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  border-bottom: 3px #16a084e8 solid;
-}
-.experience__title h2 {
+.title h2 {
   margin-left: 20px;
   
 }
-.recommendation__title {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  border-bottom: 3px #16a084e8 solid;
-}
-.recommendation__title h2 {
-  margin-left: 20px;
- 
-}
 
 .content {
-
   display: flex;
   flex-flow: row wrap; 
   margin-bottom: 10px;
@@ -168,18 +148,12 @@ i {
 .content p{
   margin-top: 0px;
   margin-left: 10px;
+  text-align: justify;
 }
 h3{
   margin-top: 0px;
   margin-bottom: 5px;
 }
-
-
-
-
-
-
-
 /*********************************************r RESPONSIVE DESIGN *******************************************************/
 /******************Tablettes*****************************/
 @media all and (max-width: 991px) {
@@ -198,6 +172,7 @@ h3{
     padding-left: 10px;
     border-radius: 10px;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
   .bloc_page {
     display: flex;
@@ -213,7 +188,7 @@ h3{
   h1 {
     margin-top: 0px;
   }
-  .content {
+  .page__content {
     width: auto;
     padding: 25px;
   }
@@ -231,9 +206,6 @@ h3{
     margin-top: 20px;
 }
  
-  .recommendation__content__1 {
-    margin-right: 100px;
-  }
   .edge__contact__info {
     display: flex;
     flex-direction: row;
@@ -241,14 +213,16 @@ h3{
   .edge__contact__info div {
     margin-right: 100px;
   }
-  .training__content .left__section__content  {
-    margin-bottom: 90px;  
+  .content{
+    width: auto;
+    flex-wrap: wrap;
+    border: 1px #9ee9dae8 solid;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
   }
-  .left__section__content p {
-    margin-bottom: 100px;
-  }
-  .right__section__content p{
-    margin-bottom: 50px;  
+  .content__1 {
+    margin: auto;
+    width: auto;
   }
   .edge__aboutMe {
     display: none;
@@ -260,28 +234,7 @@ h3{
 {
     .profile_picture_rd{
         margin-left: 25%;
-    }
-    
-    .recommendation__content__1 {
-        margin-right: auto;
-      }
-      .left__section
-      {
-          width: 30%;
-      }
-      .right__section
-      {
-          width: 70%
-      }
-      .left__section__content p {
-        margin-bottom: 105px;
-        width: auto;
-      }
-
-      .right__section__content p {
-        margin-bottom: auto;
-      }
-     
+    }  
       .edge
       {
           width: auto;
@@ -304,12 +257,11 @@ h3{
       .content
       {
           width: auto;
-          padding: auto;
-          margin: auto;
+          padding: 10px 10px 10px 10px;        
       }
       .bloc_page {
           width: auto;
           margin: auto;
-          box-shadow: 0px 4px 5px #c43737;
+          box-shadow: 0px 4px 5px #eeebeb;
       }
 }
