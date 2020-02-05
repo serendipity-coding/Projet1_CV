@@ -141,7 +141,6 @@ i {
 }
 .content {
   display: flex;
-
   margin-bottom: 10px;
   margin-top:10px;
 }
@@ -149,7 +148,7 @@ i {
   display: flex;
   flex-direction: row;
   margin-right: 20px;
-  width: 30%;
+  width: 35%;
 }
 .content__text{
   width:auto;
@@ -163,7 +162,9 @@ h3{
   margin-top: 0px;
   margin-bottom: 5px;
 }
-
+.content__1 {
+  margin: auto 20px;
+}
 /** RESPONSIVE DESIGN 
 *******************************************************/
 /*Tablettes*/
@@ -208,6 +209,7 @@ h3{
     width: auto;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 20px;
   }
   .edge__photo {
     display: none;
@@ -277,5 +279,9 @@ h3{
     width: auto;
     margin: auto;
     box-shadow: 0px 4px 5px #eeebeb;
+  }
+  .edge_icons{
+    display: flex;
+    justify-content: space-evenly;
   }
 }
