@@ -7,30 +7,23 @@
 5. RESPONSIVE DESIGN
 */
 
-/*1.FONTS 
-*******************************************************************/
-
-@font-face {
-  font-family: "aileronregular";
-  src: url("fonts/Aileron-Regular-webfont.eot");
-  src: url("fonts/Aileron-Regular-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("fonts/Aileron-Regular-webfont.woff2") format("woff2"),
-    url("fonts/Aileron-Regular-webfont.woff") format("woff"),
-    url("fonts/Aileron-Regular-webfont.ttf") format("truetype"),
-    url("fonts/Aileron-Regular-webfont.svg#aileronregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /*MISE EN PAGE GÉNÉRALE 
 *******************************************************************/
+body{
+background-color: #f5f5f5;
+font-family: 'Roboto', sans-serif;
+}
+.light__text{
+  font-weight: 300;
+}
 .bloc_page {
   display: flex;
   flex-direction: row;
   max-width: 800px;
   margin: 40px auto;
   box-shadow: 0px 4px 5px #cccccc;
+  background-color: white;
+
 }
 .profile_picture_rd {
   display: none;
@@ -44,9 +37,10 @@
 .edge {
   display: flex;
   flex-direction: column;
-  background-color: #16a085;
+  background-color: #39314a;
   border-radius: 5px;
   width: 300px;
+  color: #f5f5f5;
 }
 .edge__photo {
   border-radius: 100%;
@@ -57,16 +51,16 @@
   margin-right: 40px;
   margin-left: 40px;
   border: 3px #f5f7f6f5 solid;
+  width: 200px;
 }
 .edge__title {
   text-align: center;
-  background-color: #f5f7f6f5;
+  background-color: white;
   font-size: 1.1em;
-  color: #16a084ef;
+  color: #382463;
   padding-top: 5px;
   padding-bottom: 5px;
-  border: 3px #16a085 solid;
-  border-radius: 5px;
+  
 }
 .edge p {
   margin-left: 20px;
@@ -89,14 +83,14 @@
   padding-bottom: 20px;
 }
 .edge_icons i {
-  color: #171818;
+  color: #f5f5f5;
 }
 .edge_icons-linkedin
 {
-  margin-left: 80px;
+  margin-left: 100px;
 }
 .edge_icons-linkedin i{
-  color: #171818;
+  color: #f5f5f5;
 }
 
 .edge__aboutMe p {
@@ -111,16 +105,19 @@ a{
 .page__content {
   width: 500px;
   padding: 25px;
+  color: #707070
+
 }
 .content__title {
   margin-top: 70px;
-  margin-bottom: 70px;;
+  margin-bottom: 70px;
+  color: #424242
 }
 .content__title--color {
-  color: #16a084e8;
+  color: #382463;
 }
 .content__title--underline {
-  border-bottom: 2px #16a084e8 solid;
+  border-bottom: 2px #382463 solid;
 }
 h1 {
   font-family: "aileronregular", Arial, Serif;
@@ -128,16 +125,17 @@ h1 {
   margin-bottom: 0px;
 }
 i {
-  color: #16a084e8;
+  color: #382463;
 }
 .title {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  border-bottom: 3px #16a084e8 solid;
+  border-bottom: 3px #382463 solid;
 }
 .title h2 {
-  margin-left: 20px;  
+  margin-left: 20px; 
+  color: #424242; 
 }
 .content {
   display: flex;
@@ -148,7 +146,7 @@ i {
   display: flex;
   flex-direction: row;
   margin-right: 20px;
-  width: 35%;
+  width: 200px;
 }
 .content__text{
   width:auto;
@@ -161,6 +159,7 @@ i {
 h3{
   margin-top: 0px;
   margin-bottom: 5px;
+  color: #424242;
 }
 .content__1 {
   margin: auto 20px;
