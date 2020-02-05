@@ -141,7 +141,7 @@ i {
 }
 .content {
   display: flex;
-  flex-flow: row wrap; 
+
   margin-bottom: 10px;
   margin-top:10px;
 }
@@ -152,7 +152,7 @@ i {
   width: 30%;
 }
 .content__text{
-  width:65%
+  width:auto;
 }
 .content p{
   margin-top: 0px;
