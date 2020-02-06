@@ -1,19 +1,18 @@
 /*SOMMAIRE
--------------------------------------------------------
-1. FONTS
-2. MISE EN PAGE GÉNÉRALE 
-3. PARTIE GAUCHE (EDGE)
-4. PARTIE DROITE (PAGE_CONTENT)
-5. RESPONSIVE DESIGN
+------------------------------------------------------
+1. MISE EN PAGE GÉNÉRALE 
+2. PARTIE GAUCHE (EDGE)
+3. PARTIE DROITE (PAGE_CONTENT)
+4. RESPONSIVE DESIGN
 */
 
 /*MISE EN PAGE GÉNÉRALE 
 *******************************************************************/
-body{
-background-color: #f5f5f5;
-font-family: 'Roboto', sans-serif;
+body {
+  background-color: #f5f5f5;
+  font-family: "Roboto", sans-serif;
 }
-.light__text{
+.light__text {
   font-weight: 300;
 }
 .bloc_page {
@@ -23,7 +22,6 @@ font-family: 'Roboto', sans-serif;
   margin: 40px auto;
   box-shadow: 0px 4px 5px #cccccc;
   background-color: white;
-
 }
 .profile_picture_rd {
   display: none;
@@ -60,7 +58,6 @@ font-family: 'Roboto', sans-serif;
   color: #382463;
   padding-top: 5px;
   padding-bottom: 5px;
-  
 }
 .edge p {
   margin-left: 20px;
@@ -85,18 +82,17 @@ font-family: 'Roboto', sans-serif;
 .edge_icons i {
   color: #f5f5f5;
 }
-.edge_icons-linkedin
-{
+.edge_icons-linkedin {
   margin-left: 100px;
 }
-.edge_icons-linkedin i{
+.edge_icons-linkedin i {
   color: #f5f5f5;
 }
 
 .edge__aboutMe p {
   margin-top: 25px;
 }
-a{
+a {
   color: aquamarine;
 }
 
@@ -105,13 +101,12 @@ a{
 .page__content {
   width: 500px;
   padding: 25px;
-  color: #707070
-
+  color: #707070;
 }
 .content__title {
   margin-top: 70px;
   margin-bottom: 70px;
-  color: #424242
+  color: #424242;
 }
 .content__title--color {
   color: #382463;
@@ -134,29 +129,29 @@ i {
   border-bottom: 3px #382463 solid;
 }
 .title h2 {
-  margin-left: 20px; 
-  color: #424242; 
+  margin-left: 20px;
+  color: #424242;
 }
 .content {
   display: flex;
   margin-bottom: 10px;
-  margin-top:10px;
+  margin-top: 10px;
 }
-.content__date{
+.content__date {
   display: flex;
   flex-direction: row;
   margin-right: 20px;
-  width: 200px;
+  width: 100px;
 }
-.content__text{
-  width:auto;
+.content__text {
+  width: 300px;
 }
-.content p{
+.content p {
   margin-top: 0px;
   margin-left: 10px;
   text-align: justify;
 }
-h3{
+h3 {
   margin-top: 0px;
   margin-bottom: 5px;
   color: #424242;
@@ -168,21 +163,28 @@ h3{
 *******************************************************/
 /*Tablettes*/
 @media all and (max-width: 991px) {
+  body{
+    background-color: #D1C4E9;
+  }
+
   .profile_picture_rd {
     margin-top: 25px;
     display: block;
     margin-left: 35%;
-    border: 4px #16a084e8 solid;
+    border: 4px #382463 solid;
     border-radius: 100%;
+    margin-bottom: 20px;
   }
   .aboutMe__rd {
     display: flex;
     justify-content: center;
-    border: 2px #16a084e8 solid;
-    background-color: #16a084e8 ;
-    padding-left: 10px;
+    text-align: center;
+    color: white;
+    border: 2px #382463 solid;
+    background-color: #382463;
+    padding-right: 8px;
+    padding-left: 8px;
     border-radius: 10px;
-    margin-top: 20px;
     margin-bottom: 20px;
   }
   .bloc_page {
@@ -190,10 +192,12 @@ h3{
     flex-direction: column-reverse;
     align-items: center;
     width: auto;
+    border-radius: 10px;
   }
   .content__title {
     margin-top: 0px;
     padding-top: 0px;
+    margin-bottom: 10px;
     padding-left: 20%;
   }
   h1 {
@@ -202,9 +206,10 @@ h3{
   .page__content {
     width: auto;
     padding: 25px;
+    
   }
   .edge {
-    background-color: #16a084e8;
+    background-color: #382463;
     width: auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -213,7 +218,7 @@ h3{
   .edge__photo {
     display: none;
   }
-  .edge_icons-linkedin i{
+  .edge_icons-linkedin i {
     margin-left: 30px;
     margin-top: 20px;
   }
@@ -224,10 +229,9 @@ h3{
   .edge__contact__info div {
     margin-right: 100px;
   }
-  .content{
+  .content {
     width: auto;
     flex-wrap: wrap;
-    border: 1px #9ee9dae8 solid;
     padding: 10px 10px 10px 10px;
     border-radius: 10px;
   }
@@ -241,15 +245,14 @@ h3{
 }
 
 /*Telephone*/
-@media screen and (max-width: 425px)
-{
-  .profile_picture_rd{
+@media screen and (max-width: 425px) {
+  .profile_picture_rd {
     margin-left: 25%;
-  }  
-  .edge{
-     width: auto;
   }
-  .edge p{
+  .edge {
+    width: auto;
+  }
+  .edge p {
     width: auto;
     margin-right: auto;
   }
@@ -258,20 +261,20 @@ h3{
     justify-content: center;
   }
   .edge__contact__info div {
-    margin-right: auto
+    margin-right: auto;
   }
   .edge_icons-linkedin {
     margin-left: auto;
   }
-  .content{
+  .content {
     width: auto;
-    padding: 10px 10px 10px 10px;            
+    padding: 10px 10px 10px 10px;
   }
-  .content__text{
+  .content__text {
     width: auto;
     justify-content: center;
   }
-  .content__date{
+  .content__date {
     width: auto;
   }
   .bloc_page {
@@ -279,7 +282,7 @@ h3{
     margin: auto;
     box-shadow: 0px 4px 5px #eeebeb;
   }
-  .edge_icons{
+  .edge_icons {
     display: flex;
     justify-content: space-evenly;
   }
