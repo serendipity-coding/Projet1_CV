@@ -163,8 +163,8 @@ h3 {
 *******************************************************/
 /*Tablettes*/
 @media all and (max-width: 991px) {
-  body{
-    background-color: #D1C4E9;
+  body {
+    background-color: #d1c4e9;
   }
 
   .profile_picture_rd {
@@ -207,15 +207,11 @@ h3 {
   .page__content {
     width: auto;
     padding: 25px;
-    
   }
-  .page__content i{
-    display: nones;
-  }
-  h2{
+  h2 {
     font-size: 18px;
   }
-  h3{
+  h3 {
     font-size: 16px;
   }
   .edge {
@@ -230,9 +226,8 @@ h3 {
   }
   .edge_icons-linkedin i {
     display: none;
-    
   }
-  .edge_icons-linkedin-small i{
+  .edge_icons-linkedin-small i {
     color: white;
     margin-left: 20px;
   }
