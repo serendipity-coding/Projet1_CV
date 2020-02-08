@@ -82,18 +82,22 @@ body {
 .edge_icons i {
   color: #f5f5f5;
 }
-.edge_icons-linkedin {
-  margin-left: 100px;
-}
-.edge_icons-linkedin i {
-  color: #f5f5f5;
-}
-
 .edge__aboutMe p {
   margin-top: 25px;
 }
 a {
-  color: aquamarine;
+  color: rgb(231, 203, 241);
+  word-break: break-word;
+}
+/* unvisited link */
+
+/* visited link */
+a:visited {
+  color: rgb(108, 201, 108);
+}
+/* mouse over link */
+a:hover {
+  color: rgb(230, 219, 236);
 }
 
 /*PAGE_CONTENT
@@ -208,6 +212,7 @@ h3 {
     width: auto;
     padding: 25px;
   }
+
   h2 {
     font-size: 18px;
   }
@@ -241,6 +246,7 @@ h3 {
   .content {
     width: auto;
     flex-wrap: wrap;
+    justify-content: space-around;
     padding: 10px 10px 10px 10px;
     border-radius: 10px;
   }
@@ -248,6 +254,7 @@ h3 {
     margin: auto;
     width: auto;
   }
+
   .edge__aboutMe {
     display: none;
   }
@@ -277,6 +284,8 @@ h3 {
   }
   .content {
     width: auto;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     padding: 10px 10px 10px 10px;
   }
   .content__text {
@@ -294,5 +303,11 @@ h3 {
   .edge_icons {
     display: flex;
     justify-content: space-evenly;
+  }
+  .content__1 {
+    margin-left: 10px ;
+    width: auto;
+    
+    
   }
 }
