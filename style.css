@@ -161,7 +161,8 @@ h3 {
   color: #424242;
 }
 .content__1 {
-  margin: auto 20px;
+  margin: auto 10px;
+  width: 220px;
 }
 /** RESPONSIVE DESIGN 
 *******************************************************/
